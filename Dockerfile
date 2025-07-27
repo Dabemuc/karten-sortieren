@@ -19,5 +19,8 @@ ENV PORT=3000
 # Expose port (change if your app uses a different port)
 EXPOSE ${PORT}
 
+# Build project
+RUN npm run build
+
 # Command to run the app
 CMD ["node", "server/server.js"]
